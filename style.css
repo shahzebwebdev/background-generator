@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+}
+
+#text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5rem;
+	background-image: linear-gradient(to right, #721870, #ff8f8f);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	margin-top: 2rem;
+	text-align: center;
+	font-weight: 700;
+}
+
+#color-1, #color-2 {
+	height: 5rem;
+	width: 5rem;
+	overflow: hidden;
+	border-radius: 50%;
+	background-color: black;
+	box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+#color-1:focus, #color-2:focus {
+	outline: none;
+}
+
+#color-1::-webkit-color-swatch-wrapper, #color-2::-webkit-color-swatch-wrapper {
+	border: none;
+	border-radius: 50%;
+	padding: 0;
+}
+
+#color-1::-webkit-color-swatch, #color-2::-webkit-color-swatch {
+	border: none;
+	border-radius: 50%;
+	padding: 0;
+}
+
+
+#color-1 {
+	transform: translateX(-250%);
+}
+
+#color-box {
+	width: 30rem;
+	height: 30rem;
+	border-radius: 2rem;
+	background-image: linear-gradient(to right bottom, #721870, #ff8f8f);
+	margin: 4rem 0;
+	position: relative;
+	box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, .3);
+}
+
+#color-2 {
+	transform: translateX(250%);
+}
